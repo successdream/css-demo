@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>修改滚动条样式</title>
+  <style>
+    /* 匹配非最后一个 div 元素的 div 元素 */
+    /* div:not(:last-child)  */
+    div::-webkit-scrollbar {
+      /* 这里的宽是指竖向滚动条的宽，高是指横向滚动条的高*/      
+      width: 8px;      
+      height: 12px;      
+      background: pink;    
+    }
+    div::-webkit-scrollbar-thumb {      
+      border-radius: 10px;      
+      background: 
+      linear-gradient(red,orange);    
+    }
+    .box{
+      width: 300px;
+      height: 300px;
+      overflow: auto;
+    }
+    .child{
+      width: 300px;
+      height: 700px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p class="child">
+
+    </p>
+  </div>
+</body>
+</html>

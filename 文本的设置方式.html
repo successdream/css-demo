@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文本</title>
+  <style>
+    div{
+      /* 规定文本是否折行 */  
+      /* white-space:nowrap; */
+      /* 规定超出内容宽度的元素隐藏 */
+      /* overflow: hidden; */
+      /* text-overflow: ellipsis; */
+      /* 规定超出的内容文本省略号显示，通常跟上面的属性连用，因为没有上面的属性不会触发超出规定的内容 */
+    }
+    /*换行但是最多显示4行*/
+    div {      
+      overflow: hidden;      
+      text-overflow: ellipsis;      
+      display: -webkit-box; /* 将对象作为弹性伸缩盒子模型显示 */      
+      -webkit-line-clamp: 4; /* 控制最多显示几行 */      
+      -webkit-box-orient: vertical; /* 设置或检索伸缩盒对象的子元素的排列方式 */    
+      width: 400px;
+  }
+  </style>
+</head>
+<body>
+  <div>
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+    我是文本文字
+  </div>
+</body>
+</html>
