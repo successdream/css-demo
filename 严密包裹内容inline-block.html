@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>严密包裹</title>
+  <style>
+    /* 与100%区别是使用margin和padding不会撑破盒子，会尽可能占有剩下的空间 */
+    .box{
+      display: inline-block;
+      border: 1px solid #ccc;
+      width: -webkit-fill-available;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    我是内容
+  </div>
+</body>
+</html>
